@@ -1,0 +1,230 @@
+body{
+font-family: 'Open Sans', sans-serif;
+
+}
+.nav-links{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+width: 60%;
+margin: auto;
+}
+.links> ul{
+display: flex;
+justify-content: space-around;
+/* margin-top: 3%; */
+}
+.links> ul> li{
+list-style: none;
+
+}
+ a{
+text-decoration: none;
+color: black;
+}
+span{
+background-color: #fcf5e9;
+}
+.title-txt{
+text-align: center;
+font-size: 40px;
+margin-top: 10%;
+}
+.img-cards{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+width: 90%;
+margin: auto;
+margin-top: 10%;
+row-gap: 2%;
+column-gap: 4%;
+margin-bottom: 8%;
+}
+.img-cards> div{
+justify-content: space-around;
+width: calc(33.33% - 20px);
+
+}
+.img-cards> div> img{
+width: 380%;
+border-radius: 10px;
+
+}
+.footer{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+width:80% ;
+margin: auto;
+
+}
+.social> i{
+padding: 3%;
+}
+
+@media screen and (min-width:300px) and (max-width:700px){
+ .nav-links{
+   display: block;
+   text-align: center;
+ }
+.title-txt{
+text-align: center;
+font-size: 15px;
+
+}
+.img-cards{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+width: 90%;
+margin: auto;
+margin-top: 10%;
+row-gap: 2%;
+margin-bottom: 20%;
+}
+.footer{
+display: block;
+width:80% ;
+margin: auto;
+text-align: center;
+}
+.social> i{
+padding: none;
+}
+/* -----------------About---------------- */
+.services-section{
+  display: flex;
+  flex-direction: column;
+  
+  width: 100%; 
+  margin: auto;
+  gap: 2%;
+  }
+
+.service> h1{
+color: white;
+padding: 1%;
+margin: none;
+font-size: large;
+
+}
+.service{
+  margin-top:-2%;
+}
+.p{
+  font-size: small;
+  margin-top: -2%
+  
+}
+.our-services{
+  max-height: 300px;
+}
+/* ---------------team-section-------- */
+.team-sections{ 
+  width: 80%;
+  margin: auto;
+  gap: 2%;
+  }
+  .team-section> img{
+  width: 80%;
+  overflow: hidden;
+  border-radius: 10px;
+  max-height: 200px;
+  }  
+}
+/* ..........----------About------------ */
+.our-services{
+
+background-color: rgb(24, 24, 24);
+
+}
+.our-services> h1{
+text-align: center;
+margin: auto;
+color: white;
+padding: 2%;
+}
+.services-section{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+width: 80%;
+margin: auto;
+gap: 2%;
+}
+.service> h1{
+color: white;
+padding: 4%;
+margin: 2%;
+
+}
+.service> p{
+color: white;
+}
+
+.our-team> h1{
+text-align: center;
+margin: 5%;
+}
+.team-sections{
+display: grid; 
+grid-template-columns: repeat(3,1fr);
+justify-content: space-around;
+width: 80%;
+margin: auto;
+gap: 2%;
+}
+.team-section> img{
+width: 100%;
+border-radius: 10px;
+height: 300px;
+
+
+}
+
+/* ----------------contact---------------- */
+.mid{
+  background: black;
+  height: 350px;
+ 
+  margin-top: 5%
+}
+.mid>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.mid>div> h1{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+.Contact{
+  margin-bottom: 15%;
+}
+.contact-text{
+  text-align: center;
+  margin: 5%;
+}
+.contact-text> h1{
+  font-size:30px;
+}
+form{
+display: flex;
+flex-direction: column;
+
+}
+input, textarea{
+  border-top: none;
+  border-left:none;
+  border-right:none;
+  margin: 2%;
+  padding: 3%;
+}
+button{
+  padding: 2%;
+  background: white;
+  font-size: larger;
+  cursor: pointer;
+}
+button:hover{
+  background:black;
+  color: white;
+} 
